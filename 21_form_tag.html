@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <form  id=""  class="" action="form_save.html" method="get" enctype="multipart/form-data">
+
+            <fieldset style="background-color: yellow;">
+                <legend>personal Imformation</legend>
+                <label>Student Name:-</label>
+                <input type="text" name="sName" placeholder="enter yout name" minlength="5" maxlength="10" required value="" ><br><br>
+
+                <label>Student mobile:-</label>
+                <input type="number" placeholder="enter your number" required pattern="(0-9){10}"><br><br>
+
+                <label>Student email:-</label>
+                <input type="email" placeholder="Enter your email id"><br><br>
+
+                <label>Student photo:-</label>
+                <input type="file" required><br><br>
+
+                <label>Gender:-</label>
+                <input type="radio" checked ><b>Male</b>
+                <input type="radio"><b>Female</b><br><br>
+
+                <label>DOB:-</label>
+                <input type="date" required>
+            </fieldset>
+
+            <fieldset style="background-color: blue;">
+                <legend>Address</legend>
+                <label>Address:-</label>
+                <textarea rows="5" cols="50"></textarea><br><br>
+
+                <label>STATE</label>
+                <select>
+                    <option value="" selected>Select</option>
+                    <option value="maha" selected>Maharashtra</option>
+                    <option value="">Gujrat</option>
+                    <option>keral</option>
+                </select><br><br>
+
+                <label>Pincode</label>
+                <input type="number">
+            </fieldset>
+
+            <fieldset style="background-color: brown;">
+                <legend>subject</legend>
+                <legend>subject</legend>
+                <input type="checkbox"checked ><b>HTML</b>
+                <input type="checkbox"><b>CSS</b>
+                <input type="checkbox"><b>JS</b>
+                <input type="checkbox"><b>C++</b>
+                <input type="checkbox" checked><b>C</b>
+            </fieldset>
+            <br>
+            <fieldset style="background-color: aqua;">
+                <legend>user details</legend>
+                <label>username</label>
+                <input type="text" required><br><br>
+
+                <label>password</label>
+                <input  type="password" required><br><br>
+                
+                <input style="background-color: black; color: white;" type="reset">
+                <input style="background-color: black; color: white;" type="submit" ><br><br>
+            </fieldset>    
+                <br>
+            <fieldset style="background-color: crimson; ">
+                <button style="background-color: black; color: white;" type="reset">empty</button>
+                <button  style="float: right; color:rgb(233, 230, 230);background-color:black;" type="submit">save</button>
+            </fieldset>
+            <br><br>
+            
+            <fieldset style="background-color: aqua;">
+                <marquee>
+                <h1 style="text-align: center; border: 2px solid red; outline: 2px solid black; outline-offset: 5px;">Thank You for Your  Responce</h1>
+                </marquee>
+            </fieldset>
+            
+            
+        </form>
+    </body>
+</html>

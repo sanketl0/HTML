@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Signup Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		
+		header {
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: 10px;
+		}
+		
+		form {
+			border: 3px solid #f1f1f1;
+			margin: auto;
+			width: 50%;
+			padding: 20px;
+		}
+		
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		
+		button[type=button] {
+			background-color: #f44336;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		
+		.container {
+			padding: 16px;
+			text-align: center;
+		}
+		
+		.error {
+			color: #f00;
+			font-weight: bold;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Login/Signup Page</h1>
+	</header>
+	<form action="login.php" method="post">
+		<h2>Login</h2>
+		<div class="container">
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" required>
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+			<button type="submit">Login</button>
+			<button type="button" onclick="window.location.href='signup.html'">Signup</button>
+			<div class="container">
+				<span class="error">Incorrect email or password.</span>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
